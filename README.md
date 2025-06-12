@@ -46,7 +46,7 @@ $$x(t) = \cos(2\pi \cdot f_1 \cdot t + \pi/4) + \cos(2\pi \cdot f_2 \cdot t)$$
    python signal_sampling_experiment.py
    ```
 
-运行成功后也可以通过运行`build_executable.py`或`build_windows_from_linux.py`自行打包成可执行文件。
+运行成功后也可以通过运行`build_linux.sh`或`build_windows.bat`自行打包成可执行文件。
 
 ### 方式二：运行可执行文件
 

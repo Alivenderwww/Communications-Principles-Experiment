@@ -1,12 +1,12 @@
 @echo off
-REM Windowså¹³å°æ„å»ºè„šæœ¬
+REM WindowsÆ½Ì¨¹¹½¨½Å±¾
 
-echo æ­£åœ¨æ„å»ºWindowsç‰ˆæœ¬çš„å¯æ‰§è¡Œæ–‡ä»¶...
+echo ÕıÔÚ¹¹½¨Windows°æ±¾µÄ¿ÉÖ´ĞĞÎÄ¼ş...
 
-REM ç¡®ä¿PyInstallerå’ŒPillowå·²æ­£ç¡®å®‰è£…
+REM È·±£PyInstallerºÍPillowÒÑÕıÈ·°²×°
 pip install pyinstaller pillow
 
-REM æ„å»ºå¯æ‰§è¡Œæ–‡ä»¶ - æ·»åŠ ç‰¹å®šçš„åŒ…å«é€‰é¡¹æ¥è§£å†³PILå’ŒTkinteré—®é¢˜
+REM ¹¹½¨¿ÉÖ´ĞĞÎÄ¼ş - Ìí¼ÓÌØ¶¨µÄ°üº¬Ñ¡ÏîÀ´½â¾öPILºÍTkinterÎÊÌâ
 pyinstaller --onefile^
  --hidden-import PIL._tkinter_finder^
  --collect-all PIL^
@@ -16,8 +16,8 @@ pyinstaller --onefile^
  --icon=NONE^
  signal_sampling_experiment.py
 
-REM ç¡®ä¿distç›®å½•å­˜åœ¨
+REM È·±£distÄ¿Â¼´æÔÚ
 if not exist dist mkdir dist
 
-echo æ„å»ºå®Œæˆï¼å¯æ‰§è¡Œæ–‡ä»¶å·²ç”Ÿæˆ: dist\SignalSamplingExperiment_Windows.exe
+echo ¹¹½¨Íê³É£¡¿ÉÖ´ĞĞÎÄ¼şÒÑÉú³É: dist\SignalSamplingExperiment_Windows.exe
 pause
